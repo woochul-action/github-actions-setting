@@ -1,0 +1,6 @@
+name: push-workflow
+on: push
+
+jobs:
+  push-job:
+    runs-on: ubuntu-latest
