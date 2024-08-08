@@ -8,4 +8,4 @@ jobs:
       - name: cheeck env & secret
         run: |
           echo ${{ vars.level }}
-          echo ${{ secrets.key}}
+          echo ${{ secrets.key }}
