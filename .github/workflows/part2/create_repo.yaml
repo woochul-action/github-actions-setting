@@ -15,6 +15,7 @@ on:
         required: true
         default: 'github-actions'
         type: string
+#gh auth login --with-token  깃헙권한 사용가능하게 
 jobs:
   create-repo-automation:
     runs-on: ubuntu-latest
@@ -25,3 +26,4 @@ jobs:
       - name: create-repo
         run: |
           gh repo create woochul-action/${{ inputs.prefix }}-${{ inputs.name }} --public --add-readme
+        
